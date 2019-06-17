@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="etec">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-icon name="pizza" slot="end" class="iconsize"></ion-icon>
+    <ion-title>Cardápio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="fundo" padding>
+  <ion-list *ngFor="let semana of lanche">
+    <ion-item color="etec">
+      <h4>{{semana.semana}} </h4>
+    </ion-item>
+    <ion-item *ngFor="let dia of semana.diario" color="branco" (click)="mostraLanche(dia)">
+      <h5 class="centro">{{dia.titulo}}</h5>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

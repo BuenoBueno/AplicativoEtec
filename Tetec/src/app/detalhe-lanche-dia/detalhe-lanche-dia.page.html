@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="etec">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{lanche.titulo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item color="etec">
+    <ion-label class="letras1">Manhã</ion-label>
+  </ion-item>
+  <ion-card color="branco">
+    <ion-card-header>
+      <h4 class="letras">{{lanche.manha}}</h4>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="lanche.manhaImg" />
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item color="etec">
+    <ion-label class="letras1">Almoço</ion-label>
+  </ion-item>
+  <ion-card color="branco">
+    <ion-card-header>
+      <h4 class="letras">{{lanche.almoco}}</h4>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="lanche.almocoImg" />
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item color="etec">
+    <ion-label class="letras1">Tarde</ion-label>
+  </ion-item>
+  <ion-card color="branco">
+    <ion-card-header>
+      <h4 class="letras">{{lanche.manha}}</h4>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="lanche.manhaImg" />
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item color="etec">
+    <ion-label class="letras1">Noite</ion-label>
+  </ion-item>
+  <ion-card color="branco">
+    <ion-card-header>
+      <h4 class="letras">{{lanche.almoco}}</h4>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="lanche.almocoImg" />
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

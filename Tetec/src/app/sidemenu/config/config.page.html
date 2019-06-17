@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="azul">
+
+    <ion-buttons slot="start">
+      <ion-button routerLink="/">
+        <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Configuração</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h5 class="centro">Perfil</h5>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="http://www.bancariosdeguarulhos.com.br/wp-content/uploads/2018/10/gado.jpg">
+    </ion-avatar>
+    <ion-label>Gado d+</ion-label>
+  </ion-item>
+
+  <h5 class="centro">Notificações</h5>
+  <ion-item>
+      <ion-label>Notificações</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-icon class="icone" name="notifications-outline"></ion-icon>
+    </ion-thumbnail>
+    <ion-label>Notificações</ion-label>
+    <ion-select value="notifcacoes" okText="Confirmar" cancelText="Cancelar">
+      <ion-select-option value="sem">Sem Som</ion-select-option>
+      <ion-select-option value="vibrar">Vibrar</ion-select-option>
+      <ion-select-option value="vibrar+som">Vibrar+Som</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-icon class="icone" name="alarm"></ion-icon>
+    </ion-thumbnail>
+    <ion-label>Hora - Notificação</ion-label>
+    <ion-datetime displayFormat="HH:mm"></ion-datetime>
+  </ion-item>
+
+  <h5 class="centro">Tema</h5>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-icon class="icone" name="color-palette"></ion-icon>
+    </ion-thumbnail>
+    <ion-label>Cor</ion-label>
+    <ion-select value="notifcacoes" okText="Confirmar" cancelText="Cancelar">
+      <ion-select-option value="vermelho">Vermelho</ion-select-option>
+      <ion-select-option value="verde">Verde</ion-select-option>
+      <ion-select-option value="azul">Azul</ion-select-option>
+      <ion-select-option value="laranja">Laranja</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+</ion-content>

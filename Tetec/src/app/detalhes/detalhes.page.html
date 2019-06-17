@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalhes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <h3 class="alinhar">{{noticia.titulo}}</h3>
+  </div>
+
+  <p class="margem" [innerHtml]="noticia.textoCompleto"></p>
+  <img [src]="noticia.img" />
+
+</ion-content>
